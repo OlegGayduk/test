@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+</head>
+<body>
+
+	<div class="chiper-container">
+    	<input type='password' id='key'></input>
+    	<input type='password' id='block'></input>
+    </div>
+    
+    <div class='container'>
+		<div id="drop_zone" ondrop="dropHandler(event);" ondragover="dragOverHandler(event);">
+  			<p class="drag-txt">Drag image to this <i>drop zone</i>.</p>
+		</div>
+		
+		<button class="btn" onclick="request()">Detect</button>
+	</div>
+    
+    <script src='js/aes.js'></script>
+	<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
